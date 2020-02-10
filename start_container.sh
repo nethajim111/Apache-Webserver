@@ -14,7 +14,7 @@ echo "Build Completed"
 
 echo "********************************** Creating Container ***********************************************"
 
-docker container run -dit  --restart --name "apache-tomcat-jk-container"  -p 80 httpd-jk
+docker container run -dit  --restart always --name "apache-tomcat-jk-container"  -p 80 httpd-jk
 
 docker ps | grep apache-tomcat-jk-container
 
